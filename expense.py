@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
  
-print("CHIOMA")
 # Step 1 Create window
 root = tk.Tk()
 root.title("SpendWise")
