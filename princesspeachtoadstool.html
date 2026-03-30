@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Princess Peach Resume</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+    }
+
+    /* LEFT SIDE (IMAGE) */
+    .left {
+        width: 40%;
+        background: linear-gradient(to bottom, #ffb6d9, #ff85b3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left img {
+        width: 70%;
+        max-width: 300px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* RIGHT SIDE (CONTENT) */
+    .right {
+        width: 60%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #fff;
+    }
+
+    h1 {
+        font-size: 40px;
+        color: #d63384;
+    }
+
+    h2 {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .summary {
+        color: #444;
+        line-height: 1.7;
+        margin-bottom: 30px;
+        max-width: 600px;
+    }
+
+    .section-title {
+        color: #d63384;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #f8c6d8;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        background: #ffe0ec;
+        margin: 10px 0;
+        padding: 12px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    li:hover {
+        background: #ffd1e3;
+        transform: translateX(5px);
+    }
+
+    /* RESPONSIVE (for smaller screens) */
+    @media (max-width: 768px) {
+        body {
+            flex-direction: column;
+        }
+
+        .left, .right {
+            width: 100%;
+        }
+
+        .left {
+            height: 40vh;
+        }
+
+        .right {
+            height: auto;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="left">
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/16/Princess_Peach_Stock_Art.png" alt="Princess Peach">
+</div>
+
+<div class="right">
+    <h1>Princess Peach</h1>
+    <h2>Princess Peach Toadstool</h2>
+
+    <p class="summary">
+        Dedicated and compassionate leader seeking to continue promoting peace,
+        unity, and prosperity across the Mushroom Kingdom and neighboring realms.
+        Brings strong diplomatic skills, crisis management experience, and a
+        commitment to the well-being of all citizens.
+    </p>
+
+    <h2 class="section-title">Skills</h2>
+    <ul>
+        <li>Leadership & Public Speaking</li>
+        <li>Diplomacy & Conflict Resolution</li>
+        <li>Crisis Management</li>
+        <li>Community Development</li>
+    </ul>
+</div>
+
+</body>
+</html>
